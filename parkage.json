@@ -1,0 +1,17 @@
+/*
+{
+  "name": "random_meal_generator",
+  "version": "1.0.0",
+  "description": "A random meal generator for the 100projectsIn10Days",
+  "homepage": "https://felix ngosi.github.io/time-app",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Felix Ngosi",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
