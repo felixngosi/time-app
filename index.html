@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>time app</title>
+
+        <link rel="stylesheet" href="time.css">
+      <script>
+function startTime(){
+var today = new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+m = cheackTime(m);
+s = cheackTime(s);
+document.getElementById('txt').innerHTML=
+h + ":" + m + ":"+s;
+var t = setTimeout(startTime, 500);
+
+
+}
+function cheackTime(i){
+    if(i<10){i="0"+ i};
+    return i;
+}
+      </script>
+
+    </head>
+    <div class="main">
+    <h1>The Time Now Is</h1>
+<body onload="startTime()">
+<div id="txt"></div>
+
+<div class="icons">
+                <a href="https://twitter.com/NgosiFelix">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/felx.ngoi.9?ref=bookmarks">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+
+                <a href="https://github.com/felixngosi">
+                    <i class="fab fa-github fa-2x"></i>
+                </a></div>
+</div>
+
+<script src="https://kit.fontawesome.com/36f63d31e9.js" crossorigin="anonymous"></script>
+</body>
+</html>
